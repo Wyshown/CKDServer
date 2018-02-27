@@ -69,4 +69,27 @@ public class FoodKindDao extends BaseDao<FoodFoodKindEntity> {
         }
         return this.jsonArray;
     }
+
+
+    public JsonArray findAllFoodKindType() {
+        try (Connection conn = DB.getConn();
+             DSLContext create = DSL.using(conn, SQLDialect.MYSQL)) {
+            create.transaction(configuration -> {
+
+                StringBuffer sql = new StringBuffer();
+                sql.append(" SELECT \n");
+                sql.append(" foodKind.ID AS id, \n");
+                sql.append(" foodKind.FOOD_TYPE AS foodKind \n");
+                sql.append(" FROM  food_food_kind AS foodKind \n");
+                sql.append(" WHERE 1 = 1 \n");
+                sql.append(" GROUP BY foodKind.FOOD_TYPE \n");
+                sql.append(" ORDER BY foodKind.id \n");
+                Result<Record> record = create.fetch(sql.toString());
+                this.jsonArray = dataChangeJsonArray(record);
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return this.jsonArray;
+    }
 }

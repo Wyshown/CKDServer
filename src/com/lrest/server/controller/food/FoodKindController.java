@@ -1,5 +1,6 @@
 package com.lrest.server.controller.food;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.lrest.server.controller.BaseController;
@@ -65,6 +66,37 @@ public class FoodKindController extends BaseController {
             System.out.print("输出转化1111111122222221的时间: ");
             System.out.println(a2 - a3);
             return  success(this.jsonArray,this.count);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return error();
+        }
+    }
+
+
+    @POST
+    @Path("/findAllFoodKindTypeAndTypeList")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public JsonObject findAllFoodKindTypeAndTypeList() throws Exception {
+        try {
+            JsonObject resultJson = new JsonObject();
+            JsonArray foodKindTypeArr = new JsonArray();
+
+
+            this.jsonArray = this.foodKindDao.findAllFoodKindType();
+            resultJson.add("foodKind",this.jsonArray);
+
+            String foodKind = "";
+            for (int i = 0; i < this.jsonArray.size(); i++) {
+                this.jsonObject = this.jsonArray.get(i).getAsJsonObject();
+                foodKind = getJsonAsString(this.jsonObject,"foodKind");
+                foodKindTypeArr = this.foodKindDao.findAllFoodKindByFoodTypeAndName(
+                        -1,-1,foodKind,"");
+
+                resultJson.add("foodKindType_" + foodKind, foodKindTypeArr);
+            }
+
+            return  success(resultJson);
         } catch (Exception e) {
             e.printStackTrace();
             return error();
