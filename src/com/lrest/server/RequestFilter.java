@@ -52,6 +52,8 @@ public class RequestFilter implements ContainerRequestFilter {
         ignorelist.add("/");
         ignorelist.add("login/");
         ignorelist.add("nl/");
+        ignorelist.add("foodKind/");
+        ignorelist.add("food/");
 
         String urlpath = requestContext.getUriInfo().getPath() + "/";
         for (int i = 0; i < ignorelist.size(); i++) {

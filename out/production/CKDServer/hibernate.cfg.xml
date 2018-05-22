@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url">jdbc:mysql://101.200.83.32:3306/test</property>
+    <property name="connection.url">jdbc:mysql://106.15.195.29:3306/test</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 
 
@@ -30,6 +30,7 @@
       <mapping class="com.lrest.server.entity.food.FoodFoodEntity"/>
       <mapping class="com.lrest.server.entity.food.FoodFoodKindEntity"/>
       <mapping class="com.lrest.server.entity.food.FoodFoodUrlEntity"/>
+      <mapping resource="com/lrest/server/entity/food/FoodFoodKindEntity.hbm.xml"/>
 
       <!-- Drop and re-create the database schema on startup -->
     <!--<property name="hbm2ddl.auto">update</property>-->

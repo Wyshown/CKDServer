@@ -13,13 +13,13 @@ public class DatabasePool {
     public boolean getStoragePooling() {
         try {
             this.databaseConfiguration = new HikariConfig();
-            this.databaseConfiguration.setMaximumPoolSize(22);
+            this.databaseConfiguration.setMaximumPoolSize(5);
             this.databaseConfiguration.setDriverClassName("com.mysql.jdbc.Driver");
             this.databaseConfiguration.setJdbcUrl(Config.mysql_jdbcurl);
             this.databaseConfiguration.setUsername(Config.mysql_user);
             this.databaseConfiguration.setPassword(Config.mysql_password);
             this.databaseConfiguration.setAutoCommit(true);
-            this.databaseConfiguration.setMaxLifetime(120000000L);
+            this.databaseConfiguration.setMaxLifetime(20);
             this.databaseConfiguration.setConnectionTestQuery("SELECT 1");
             this.databaseConfiguration.setPoolName("CKDServer");
             this.database = new HikariDataSource(this.databaseConfiguration);

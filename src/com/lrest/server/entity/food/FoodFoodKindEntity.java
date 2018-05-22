@@ -1,29 +1,32 @@
 package com.lrest.server.entity.food;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
- * Created by Administrator on 2017/7/23.
+ * @version V1.0.0
+ * @projectName: CKDServer
+ * @title: FoodFoodKindEntity
+ * @package com.lrest.server.entity.food
+ * @description: ${TODO}
+ * @author: 韩武洽 @Wyshown
+ * @date: 2018/3/7 上午10:32
  */
 @Entity
 @Table(name = "food_food_kind", schema = "test", catalog = "")
 public class FoodFoodKindEntity {
-    private Integer id;
+    private int id;
     private String foodKindName;
     private String imageUrl;
     private String description;
     private String foodType;
 
-    @Basic
+    @Id
     @Column(name = "ID", nullable = false)
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -74,7 +77,7 @@ public class FoodFoodKindEntity {
 
         FoodFoodKindEntity that = (FoodFoodKindEntity) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (id != that.id) return false;
         if (foodKindName != null ? !foodKindName.equals(that.foodKindName) : that.foodKindName != null) return false;
         if (imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
@@ -85,7 +88,7 @@ public class FoodFoodKindEntity {
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = id;
         result = 31 * result + (foodKindName != null ? foodKindName.hashCode() : 0);
         result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);

@@ -27,7 +27,7 @@ public class FoodDao extends BaseDao<FoodFoodEntity>{
     */
     public JsonArray findAllFoodByQuery(
             DSLContext create,Integer page,Integer pagenum, Integer foodKindId,String foodType,String foodKindName,
-            Integer foodId,String foodName ) {
+            Integer foodId,String foodName,String orderName,String orderType) {
         try {
             create.transaction((Configuration configuration) -> {
 
@@ -97,7 +97,11 @@ public class FoodDao extends BaseDao<FoodFoodEntity>{
                 if (null != foodName && !foodName.equals("")) {
                     sql.append(" AND (food.FOOD_CN_NAME LIKE '%" + foodName + "%' OR food.FOOD_EN_NAME LIKE '%" + foodName + "%' OR food.FOOD_ALIAS LIKE '%" + foodName + "%') \n");
                 }
-                sql.append(" ORDER BY food.FOOD_CN_NAME \n");
+                if (null == orderName) {
+                    sql.append(" ORDER BY food.FOOD_CN_NAME \n");
+                } else {
+                    sql.append(" ORDER BY " + orderName + " "+ orderType +" \n");
+                }
 
                 if (-1 != pagenum) {
                     sql.append("LIMIT " + (page - 1) * pagenum + "," + pagenum);
