@@ -12,6 +12,18 @@ public class TRolePermitEntity {
     private Integer roleNum;
     private Integer funcTreeId;
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setRoleNum(int roleNum) {
+        this.roleNum = roleNum;
+    }
+
+    public void setFuncTreeId(int funcTreeId) {
+        this.funcTreeId = funcTreeId;
+    }
+
     @Id
     @Column(name = "ID", nullable = false)
     public Integer getId() {

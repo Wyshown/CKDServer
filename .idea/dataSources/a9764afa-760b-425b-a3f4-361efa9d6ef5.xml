@@ -59,396 +59,405 @@
     </column>
     <column id="20" parent="7" name="HEALTH_LIGHT">
       <Position>9</Position>
-      <Comment>安全等级</Comment>
+      <Comment>食物安全等级</Comment>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="21" parent="7" name="WEIGHT">
+    <column id="21" parent="7" name="HEALTH_LIGHT_GRADE_REMARK">
       <Position>10</Position>
+      <Comment>食物等级备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="7" name="WEIGHT">
+      <Position>11</Position>
       <Comment>重量(100g)</Comment>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="22" parent="7" name="CALORY">
-      <Position>11</Position>
+    <column id="23" parent="7" name="CALORY">
+      <Position>12</Position>
       <Comment>热量</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="23" parent="7" name="CALORY_STATE_REMARK">
-      <Position>12</Position>
+    <column id="24" parent="7" name="CALORY_STATE_REMARK">
+      <Position>13</Position>
       <Comment>热量能量备注(1: 低热量 2.热量一般 3. 高热量)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="24" parent="7" name="FAT">
-      <Position>13</Position>
+    <column id="25" parent="7" name="FAT">
+      <Position>14</Position>
       <Comment>脂肪</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="25" parent="7" name="FAT_STATE_REMARK">
-      <Position>14</Position>
+    <column id="26" parent="7" name="FAT_STATE_REMARK">
+      <Position>15</Position>
       <Comment>脂肪能量备注(1: 低脂肪 2.脂肪一般 3. 高脂肪)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="26" parent="7" name="PROTEIN">
-      <Position>15</Position>
+    <column id="27" parent="7" name="PROTEIN">
+      <Position>16</Position>
       <Comment>蛋白质</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="27" parent="7" name="FIBER_DIETARY">
-      <Position>16</Position>
+    <column id="28" parent="7" name="FIBER_DIETARY">
+      <Position>17</Position>
       <Comment>膳食纤维</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="28" parent="7" name="CARBOHYDRATE">
-      <Position>17</Position>
+    <column id="29" parent="7" name="CARBOHYDRATE">
+      <Position>18</Position>
       <Comment>碳水化合物</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="29" parent="7" name="VITAMIN_A">
-      <Position>18</Position>
+    <column id="30" parent="7" name="VITAMIN_A">
+      <Position>19</Position>
       <Comment>维生素A</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="30" parent="7" name="THIAMINE">
-      <Position>19</Position>
+    <column id="31" parent="7" name="THIAMINE">
+      <Position>20</Position>
       <Comment>维生素B1</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="31" parent="7" name="LACTOFLAVIN">
-      <Position>20</Position>
+    <column id="32" parent="7" name="LACTOFLAVIN">
+      <Position>21</Position>
       <Comment>胡萝卜素</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="32" parent="7" name="VITAMIN_C">
-      <Position>21</Position>
+    <column id="33" parent="7" name="VITAMIN_C">
+      <Position>22</Position>
       <Comment>维生素C</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="33" parent="7" name="VITAMIN_E">
-      <Position>22</Position>
+    <column id="34" parent="7" name="VITAMIN_E">
+      <Position>23</Position>
       <Comment>维生素E</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="34" parent="7" name="NIACIN">
-      <Position>23</Position>
+    <column id="35" parent="7" name="NIACIN">
+      <Position>24</Position>
       <Comment>烟酸</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="35" parent="7" name="NATRIUM">
-      <Position>24</Position>
+    <column id="36" parent="7" name="NATRIUM">
+      <Position>25</Position>
       <Comment>钠</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="36" parent="7" name="CALCIUM">
-      <Position>25</Position>
+    <column id="37" parent="7" name="CALCIUM">
+      <Position>26</Position>
       <Comment>钙</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="37" parent="7" name="IRON">
-      <Position>26</Position>
+    <column id="38" parent="7" name="IRON">
+      <Position>27</Position>
       <Comment>铁</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="38" parent="7" name="KALIUM">
-      <Position>27</Position>
+    <column id="39" parent="7" name="KALIUM">
+      <Position>28</Position>
       <Comment>钾</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="39" parent="7" name="IODINE">
-      <Position>28</Position>
+    <column id="40" parent="7" name="IODINE">
+      <Position>29</Position>
       <Comment>碘</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="40" parent="7" name="ZINC">
-      <Position>29</Position>
+    <column id="41" parent="7" name="ZINC">
+      <Position>30</Position>
       <Comment>锌</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="41" parent="7" name="SELENIUM">
-      <Position>30</Position>
+    <column id="42" parent="7" name="SELENIUM">
+      <Position>31</Position>
       <Comment>硒</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="42" parent="7" name="MAGNESIUM">
-      <Position>31</Position>
+    <column id="43" parent="7" name="MAGNESIUM">
+      <Position>32</Position>
       <Comment>镁</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="43" parent="7" name="COPPER">
-      <Position>32</Position>
+    <column id="44" parent="7" name="COPPER">
+      <Position>33</Position>
       <Comment>铜</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="44" parent="7" name="MANGANESE">
-      <Position>33</Position>
+    <column id="45" parent="7" name="MANGANESE">
+      <Position>34</Position>
       <Comment>锰</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="45" parent="7" name="CHOLESTEROL">
-      <Position>34</Position>
+    <column id="46" parent="7" name="CHOLESTEROL">
+      <Position>35</Position>
       <Comment>胆固醇</Comment>
       <DataType>decimal(10,1)|0</DataType>
     </column>
-    <column id="46" parent="7" name="GL">
-      <Position>35</Position>
+    <column id="47" parent="7" name="GL">
+      <Position>36</Position>
       <Comment>GL值</Comment>
       <DataType>decimal(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="47" parent="7" name="GL_STATE_REMARK">
-      <Position>36</Position>
+    <column id="48" parent="7" name="GL_STATE_REMARK">
+      <Position>37</Position>
       <Comment>GL能量备注(1: 低GL 2.GL一般 3. 高GL)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="48" parent="7" name="GI">
-      <Position>37</Position>
+    <column id="49" parent="7" name="GI">
+      <Position>38</Position>
       <Comment>GI值</Comment>
       <DataType>decimal(10)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="49" parent="7" name="GI_STATE_REMARK">
-      <Position>38</Position>
+    <column id="50" parent="7" name="GI_STATE_REMARK">
+      <Position>39</Position>
       <Comment>GI能量备注(1: 低GI 2.GI一般 3. 高GI)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="50" parent="7" name="UREMIA_SATE_GRADE">
-      <Position>39</Position>
+    <column id="51" parent="7" name="UREMIA_SATE_GRADE">
+      <Position>40</Position>
       <Comment>尿毒症安全等级(1.推荐 2.适量 3. 少吃)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="51" parent="7" name="UREMIA_SATE_GRADE_REMARK">
-      <Position>40</Position>
+    <column id="52" parent="7" name="UREMIA_SATE_GRADE_REMARK">
+      <Position>41</Position>
       <Comment>尿毒症安全等级备注</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="52" parent="7" name="DN_SATE_GRADE">
-      <Position>41</Position>
+    <column id="53" parent="7" name="DN_SATE_GRADE">
+      <Position>42</Position>
       <Comment>糖尿病肾病安全等级(1.推荐 2.适量 3. 少吃)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="53" parent="7" name="DN_SATE_GRADE_REMARK">
-      <Position>42</Position>
+    <column id="54" parent="7" name="DN_SATE_GRADE_REMARK">
+      <Position>43</Position>
       <Comment>糖尿病肾病安全等级备注</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="54" parent="7" name="IGA_SATE_GRADE">
-      <Position>43</Position>
+    <column id="55" parent="7" name="IGA_SATE_GRADE">
+      <Position>44</Position>
       <Comment>IGA肾病安全等级(1.推荐 2.适量 3. 少吃)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="55" parent="7" name="IGA_SATE_GRADE_REMARK">
-      <Position>44</Position>
+    <column id="56" parent="7" name="IGA_SATE_GRADE_REMARK">
+      <Position>45</Position>
       <Comment>IGA肾病安全等级备注</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="56" parent="7" name="MA_SATE_GRADE">
-      <Position>45</Position>
+    <column id="57" parent="7" name="MA_SATE_GRADE">
+      <Position>46</Position>
       <Comment>膜性肾病安全等级(1.推荐 2.适量 3. 少吃)</Comment>
       <DataType>int(1)|0</DataType>
     </column>
-    <column id="57" parent="7" name="MA_SATE_GRADE_REMARK">
-      <Position>46</Position>
+    <column id="58" parent="7" name="MA_SATE_GRADE_REMARK">
+      <Position>47</Position>
       <Comment>膜性肾病安全等级备注</Comment>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="58" parent="7" name="CREATE_TIME">
-      <Position>47</Position>
+    <column id="59" parent="7" name="CREATE_TIME">
+      <Position>48</Position>
       <DataType>varchar(32)|0</DataType>
     </column>
-    <index id="59" parent="7" name="co">
+    <index id="60" parent="7" name="co">
       <ColNames>FOOD_CN_NAME
 FOOD_EN_NAME
 FOOD_ALIAS</ColNames>
     </index>
-    <index id="60" parent="7" name="food_kind_id">
+    <index id="61" parent="7" name="food_kind_id">
       <ColNames>FOOD_KIND_ID</ColNames>
     </index>
-    <index id="61" parent="7" name="id">
+    <index id="62" parent="7" name="id">
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="62" parent="7" name="PRIMARY">
+    <key id="63" parent="7" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="63" parent="7" name="id">
+    <key id="64" parent="7" name="id">
       <ColNames>ID</ColNames>
       <UnderlyingIndexName>id</UnderlyingIndexName>
     </key>
-    <column id="64" parent="8" name="ID">
+    <column id="65" parent="8" name="ID">
       <Position>1</Position>
       <DataType>int(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="65" parent="8" name="FOOD_KIND_NAME">
+    <column id="66" parent="8" name="FOOD_KIND_NAME">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="66" parent="8" name="IMAGE_URL">
+    <column id="67" parent="8" name="IMAGE_URL">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="67" parent="8" name="DESCRIPTION">
+    <column id="68" parent="8" name="DESCRIPTION">
       <Position>4</Position>
       <DataType>varchar(200)|0</DataType>
     </column>
-    <column id="68" parent="8" name="FOOD_TYPE">
+    <column id="69" parent="8" name="FOOD_TYPE">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <index id="69" parent="8" name="adsa">
+    <column id="70" parent="8" name="SORT">
+      <Position>6</Position>
+      <DataType>int(3)|0</DataType>
+    </column>
+    <index id="71" parent="8" name="adsa">
       <ColNames>FOOD_KIND_NAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="70" parent="8" name="pk_id">
+    <index id="72" parent="8" name="pk_id">
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="71" parent="8" name="typea">
+    <index id="73" parent="8" name="typea">
       <ColNames>FOOD_TYPE</ColNames>
     </index>
-    <key id="72" parent="8" name="PRIMARY">
+    <key id="74" parent="8" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="73" parent="8" name="pk_id">
+    <key id="75" parent="8" name="pk_id">
       <ColNames>ID</ColNames>
       <UnderlyingIndexName>pk_id</UnderlyingIndexName>
     </key>
-    <key id="74" parent="8" name="adsa">
+    <key id="76" parent="8" name="adsa">
       <ColNames>FOOD_KIND_NAME</ColNames>
       <UnderlyingIndexName>adsa</UnderlyingIndexName>
     </key>
-    <column id="75" parent="9" name="ID">
+    <column id="77" parent="9" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="76" parent="9" name="PID">
+    <column id="78" parent="9" name="PID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="9" name="FUNC_TITLE">
+    <column id="79" parent="9" name="FUNC_TITLE">
       <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="78" parent="9" name="PLATFORM">
+    <column id="80" parent="9" name="PLATFORM">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="79" parent="9" name="FUNC_CODE">
+    <column id="81" parent="9" name="FUNC_CODE">
       <Position>5</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="80" parent="9" name="SEQ">
+    <column id="82" parent="9" name="SEQ">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="81" parent="9" name="PRIMARY">
+    <key id="83" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="82" parent="10" name="ID">
+    <column id="84" parent="10" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="83" parent="10" name="ROLE_NUM">
+    <column id="85" parent="10" name="ROLE_NUM">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="84" parent="10" name="FUNC_TREE_ID">
+    <column id="86" parent="10" name="FUNC_TREE_ID">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="85" parent="10" name="PRIMARY">
+    <key id="87" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="86" parent="11" name="ID">
+    <column id="88" parent="11" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="87" parent="11" name="ROLE_NUM">
+    <column id="89" parent="11" name="ROLE_NUM">
       <Position>2</Position>
       <Comment>11.管理员 12.员工 21.用户</Comment>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;3&apos;</DefaultExpression>
     </column>
-    <column id="88" parent="11" name="LOGIN_NAME">
+    <column id="90" parent="11" name="LOGIN_NAME">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="89" parent="11" name="LOGIN_PWD">
+    <column id="91" parent="11" name="LOGIN_PWD">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="90" parent="11" name="USER_NAME">
+    <column id="92" parent="11" name="USER_NAME">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="91" parent="11" name="NICK_NAME">
+    <column id="93" parent="11" name="NICK_NAME">
       <Position>6</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="92" parent="11" name="SEX">
+    <column id="94" parent="11" name="SEX">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="93" parent="11" name="CELLPHONE">
+    <column id="95" parent="11" name="CELLPHONE">
       <Position>8</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="94" parent="11" name="EMAIL">
+    <column id="96" parent="11" name="EMAIL">
       <Position>9</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="95" parent="11" name="FILE_USER_ICON_ID">
+    <column id="97" parent="11" name="FILE_USER_ICON_ID">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="96" parent="11" name="BIRTHDATE">
+    <column id="98" parent="11" name="BIRTHDATE">
       <Position>11</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="97" parent="11" name="REMARK">
+    <column id="99" parent="11" name="REMARK">
       <Position>12</Position>
       <DataType>varchar(500)|0</DataType>
     </column>
-    <column id="98" parent="11" name="CREATE_USER_ID">
+    <column id="100" parent="11" name="CREATE_USER_ID">
       <Position>13</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="99" parent="11" name="CREATE_TIME">
+    <column id="101" parent="11" name="CREATE_TIME">
       <Position>14</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="100" parent="11" name="IS_DELETE">
+    <column id="102" parent="11" name="IS_DELETE">
       <Position>15</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <index id="101" parent="11" name="pk21">
+    <index id="103" parent="11" name="pk21">
       <ColNames>CELLPHONE</ColNames>
     </index>
-    <key id="102" parent="11" name="PRIMARY">
+    <key id="104" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>

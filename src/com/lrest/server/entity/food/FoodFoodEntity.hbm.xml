@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lrest.server.entity.food.FoodFoodEntity" table="food_food" schema="test">
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
+        </id>
+        <property name="foodKindId">
+            <column name="FOOD_KIND_ID" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="foodCode">
+            <column name="FOOD_CODE" sql-type="varchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="foodCnName">
+            <column name="FOOD_CN_NAME" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="foodEnName">
+            <column name="FOOD_EN_NAME" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="foodAlias">
+            <column name="FOOD_ALIAS" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="thumbImageUrl">
+            <column name="THUMB_IMAGE_URL" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="isLiquid">
+            <column name="IS_LIQUID" sql-type="varchar(18)" length="18" not-null="true"/>
+        </property>
+        <property name="healthLight">
+            <column name="HEALTH_LIGHT" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="healthLightGradeRemark">
+            <column name="HEALTH_LIGHT_GRADE_REMARK" sql-type="varchar(32)" length="32" not-null="true"/>
+        </property>
+        <property name="weight">
+            <column name="WEIGHT" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="calory">
+            <column name="CALORY" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="caloryStateRemark">
+            <column name="CALORY_STATE_REMARK" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="fat">
+            <column name="FAT" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="fatStateRemark">
+            <column name="FAT_STATE_REMARK" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="protein">
+            <column name="PROTEIN" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="fiberDietary">
+            <column name="FIBER_DIETARY" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="carbohydrate">
+            <column name="CARBOHYDRATE" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="vitaminA">
+            <column name="VITAMIN_A" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="thiamine">
+            <column name="THIAMINE" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="lactoflavin">
+            <column name="LACTOFLAVIN" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="vitaminC">
+            <column name="VITAMIN_C" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="vitaminE">
+            <column name="VITAMIN_E" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="niacin">
+            <column name="NIACIN" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="natrium">
+            <column name="NATRIUM" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="calcium">
+            <column name="CALCIUM" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="iron">
+            <column name="IRON" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="kalium">
+            <column name="KALIUM" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="iodine">
+            <column name="IODINE" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="zinc">
+            <column name="ZINC" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="selenium">
+            <column name="SELENIUM" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="magnesium">
+            <column name="MAGNESIUM" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="copper">
+            <column name="COPPER" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="manganese">
+            <column name="MANGANESE" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="cholesterol">
+            <column name="CHOLESTEROL" sql-type="decimal(10,1)" precision="10" scale="1" not-null="true"/>
+        </property>
+        <property name="gl">
+            <column name="GL" sql-type="decimal(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="glStateRemark">
+            <column name="GL_STATE_REMARK" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="gi">
+            <column name="GI" sql-type="decimal(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="giStateRemark">
+            <column name="GI_STATE_REMARK" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="uremiaSateGrade">
+            <column name="UREMIA_SATE_GRADE" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="uremiaSateGradeRemark">
+            <column name="UREMIA_SATE_GRADE_REMARK" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="dnSateGrade">
+            <column name="DN_SATE_GRADE" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="dnSateGradeRemark">
+            <column name="DN_SATE_GRADE_REMARK" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="igaSateGrade">
+            <column name="IGA_SATE_GRADE" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="igaSateGradeRemark">
+            <column name="IGA_SATE_GRADE_REMARK" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="maSateGrade">
+            <column name="MA_SATE_GRADE" sql-type="int(1)" not-null="true"/>
+        </property>
+        <property name="maSateGradeRemark">
+            <column name="MA_SATE_GRADE_REMARK" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="createTime">
+            <column name="CREATE_TIME" sql-type="varchar(32)" length="32" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

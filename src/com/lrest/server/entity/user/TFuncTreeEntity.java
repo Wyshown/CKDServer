@@ -15,6 +15,22 @@ public class TFuncTreeEntity {
     private String funcCode;
     private Integer seq;
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPid(int pid) {
+        this.pid = pid;
+    }
+
+    public void setPlatform(int platform) {
+        this.platform = platform;
+    }
+
+    public void setSeq(int seq) {
+        this.seq = seq;
+    }
+
     @Id
     @Column(name = "ID", nullable = false)
     public Integer getId() {

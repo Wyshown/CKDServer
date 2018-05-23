@@ -50,10 +50,15 @@ public class FoodDao extends BaseDao<FoodFoodEntity>{
                 sql.append(" END AS thumbImageUrl, \n");
 
                 sql.append(" food.IS_LIQUID AS isLiquid, \n");
+
                 sql.append(" food.HEALTH_LIGHT AS healthLight, \n");
+                sql.append(" food.HEALTH_LIGHT_GRADE_REMARK AS healthLightGradeRemark, \n");
+
                 sql.append(" food.WEIGHT AS weight, \n");
                 sql.append(" food.CALORY AS calory, \n");
+                sql.append(" food.CALORY_STATE_REMARK AS caloryStateRemark, \n");
                 sql.append(" food.FAT AS fat, \n");
+                sql.append(" food.fat_state_remark AS fatStateRemark, \n");
                 sql.append(" food.PROTEIN AS protein, \n");
                 sql.append(" food.FIBER_DIETARY AS fiberDietary, \n");
                 sql.append(" food.CARBOHYDRATE AS carbohydrate, \n");
@@ -74,6 +79,25 @@ public class FoodDao extends BaseDao<FoodFoodEntity>{
                 sql.append(" food.COPPER AS copper, \n");
                 sql.append(" food.MANGANESE AS manganese, \n");
                 sql.append(" food.CHOLESTEROL AS cholesterol, \n");
+
+                sql.append(" food.GL AS gl, \n");
+                sql.append(" food.GL_STATE_REMARK AS glStateRemark, \n");
+
+                sql.append(" food.GI AS gi, \n");
+                sql.append(" food.GI_STATE_REMARK AS giStateRemark, \n");
+
+                sql.append(" food.UREMIA_SATE_GRADE AS uremiaSateGrade, \n");
+                sql.append(" food.UREMIA_SATE_GRADE_REMARK AS uremiaSateGradeRemark, \n");
+
+                sql.append(" food.DN_SATE_GRADE AS dnSateGrade, \n");
+                sql.append(" food.DN_SATE_GRADE_REMARK AS dnSateGradeRemark, \n");
+
+                sql.append(" food.IGA_SATE_GRADE AS igaSateGrade, \n");
+                sql.append(" food.IGA_SATE_GRADE_REMARK AS igaSateGradeRemark, \n");
+
+                sql.append(" food.MA_SATE_GRADE AS maSateGrade, \n");
+                sql.append(" food.MA_SATE_GRADE_REMARK AS maSateGradeRemark, \n");
+
                 sql.append(" foodKind.FOOD_TYPE AS foodType, \n");
                 sql.append(" foodKind.FOOD_KIND_NAME AS foodKindName \n");
 

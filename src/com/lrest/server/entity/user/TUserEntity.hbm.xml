@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lrest.server.entity.user.TUserEntity" table="t_user" schema="test">
+        <id name="id">
+            <column name="ID" sql-type="int(11)"/>
+        </id>
+        <property name="roleNum">
+            <column name="ROLE_NUM" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="loginName">
+            <column name="LOGIN_NAME" sql-type="varchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="loginPwd">
+            <column name="LOGIN_PWD" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="userName">
+            <column name="USER_NAME" sql-type="varchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="nickName">
+            <column name="NICK_NAME" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="SEX" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="cellphone">
+            <column name="CELLPHONE" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="email">
+            <column name="EMAIL" sql-type="varchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="fileUserIconId">
+            <column name="FILE_USER_ICON_ID" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="birthdate">
+            <column name="BIRTHDATE" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="remark">
+            <column name="REMARK" sql-type="varchar(500)" length="500" not-null="true"/>
+        </property>
+        <property name="createUserId">
+            <column name="CREATE_USER_ID" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="createTime">
+            <column name="CREATE_TIME" sql-type="bigint(20)" not-null="true"/>
+        </property>
+        <property name="isDelete">
+            <column name="IS_DELETE" sql-type="int(11)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

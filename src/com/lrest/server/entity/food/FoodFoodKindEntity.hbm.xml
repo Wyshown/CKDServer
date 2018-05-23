@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lrest.server.entity.food.FoodFoodKindEntity" table="food_food_kind" schema="test">
+        <id name="id">
+            <column name="ID" sql-type="int(20)"/>
+        </id>
+        <property name="foodKindName">
+            <column name="FOOD_KIND_NAME" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="imageUrl">
+            <column name="IMAGE_URL" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="description">
+            <column name="DESCRIPTION" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="foodType">
+            <column name="FOOD_TYPE" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="sort">
+            <column name="SORT" sql-type="int(3)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

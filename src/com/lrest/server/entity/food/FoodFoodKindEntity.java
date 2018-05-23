@@ -3,13 +3,17 @@ package com.lrest.server.entity.food;
 import javax.persistence.*;
 
 /**
+ * All rights Reserved, Designed By www.yingfeng365.com
+ *
  * @version V1.0.0
  * @projectName: CKDServer
  * @title: FoodFoodKindEntity
  * @package com.lrest.server.entity.food
  * @description: ${TODO}
  * @author: 韩武洽 @Wyshown
- * @date: 2018/3/7 上午10:32
+ * @date: 2018/5/23 下午9:04
+ * @copyright: 2018 www.yingfeng365.com
+ * 注意：本内容仅限于 江苏灜沣信息科技有限公司，禁止外泄以及用于其他的商业
  */
 @Entity
 @Table(name = "food_food_kind", schema = "test", catalog = "")
@@ -19,6 +23,7 @@ public class FoodFoodKindEntity {
     private String imageUrl;
     private String description;
     private String foodType;
+    private Integer sort;
 
     @Id
     @Column(name = "ID", nullable = false)
@@ -70,6 +75,16 @@ public class FoodFoodKindEntity {
         this.foodType = foodType;
     }
 
+    @Basic
+    @Column(name = "SORT", nullable = true)
+    public Integer getSort() {
+        return sort;
+    }
+
+    public void setSort(Integer sort) {
+        this.sort = sort;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -82,6 +97,7 @@ public class FoodFoodKindEntity {
         if (imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
         if (foodType != null ? !foodType.equals(that.foodType) : that.foodType != null) return false;
+        if (sort != null ? !sort.equals(that.sort) : that.sort != null) return false;
 
         return true;
     }
@@ -93,6 +109,7 @@ public class FoodFoodKindEntity {
         result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (foodType != null ? foodType.hashCode() : 0);
+        result = 31 * result + (sort != null ? sort.hashCode() : 0);
         return result;
     }
 }

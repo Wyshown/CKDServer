@@ -24,6 +24,10 @@ public class TUserEntity {
     private Long createTime;
     private Integer isDelete;
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Id
     @Column(name = "ID", nullable = false)
     public Integer getId() {
